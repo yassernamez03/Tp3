@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function max(n, x, z) {
+        if (n > x && n > z || n == z && n > x || n == x && n > z) {
+            return (n);
+        }
+        if (x > z && x > n || x == z && x > n || x == n && x > z) {
+            return (x);
+        }
+        if (z > x && z > n || z == n && z > x || z == x && z > n) {
+            return (z)
+        }
+    }
+    max(4, 2, 1);
+
+    function somme(a, b) {
+        if (a != b) {
+            return (a + b)
+        } else {
+            return ((a + b) * 3)
+        }
+    }
+
+    somme(2, 3)
+</script>
+
+</html>

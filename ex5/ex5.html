@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function some(a) {
+        var s = 0;
+        for (let i = 0; i < 5; i++) {
+            s = a[i] + a[i + 1]
+        }
+        return (s)
+    }
+
+    const a = [];
+    for (let i = 0; i < 5; i++) {
+        a[i] = parseInt(prompt("a numbre"));
+    }
+    console.log(some(a))
+
+    function test(a) {
+        let s = 0
+        let max = 0
+        for (let i = 0; i <= 5; i++) {
+            s = Math.abs(a[i + 1] - a[i]);
+            if (s > max) {
+                max = s;
+            };
+        }
+        return (parseInt(s))
+
+    }
+</script>
+
+</html>

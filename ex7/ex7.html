@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let a = parseInt(Math.random() * 10);
+    let b = prompt("entre votre essai")
+    let i = 0
+    console.log(a)
+    while (b != a) {
+        if (b > a) {
+            alert("plus petite")
+            b = prompt("entre un nouveau nombre")
+        } else if (b < a) {
+            alert("plus grand")
+            b = prompt("entre un nouveau nombre")
+        }
+        i = i + 1;
+    }
+    alert(`bien jouer  votre nbr de coups est :${i}`)
+</script>
+
+</html>
